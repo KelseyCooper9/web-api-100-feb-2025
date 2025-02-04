@@ -1,19 +1,23 @@
-﻿using Alba;
+﻿
+
+using Alba;
 
 namespace SoftwareCatalog.Tests.Status;
-// Have to be public classes.  And they have to extend* ControllerBase
-public class CanGetTheSTatus
+public class CanGetTheStatus
 {
+
     [Fact]
     public async Task GetsA200WhenGettingTheStatus()
     {
+        // This will start up our API, with our configuration (Program)
         var host = await AlbaHost.For<Program>();
+
         await host.Scenario(api =>
         {
             api.Get.Url("/status");
             api.StatusCodeShouldBeOk();
+
         });
+
     }
-
-
 }

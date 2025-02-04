@@ -3,16 +3,16 @@ namespace SoftwareCatalog.Tests;
 public class UnitTest1
 {
     [Fact]
-    public void Test1()
+    public void CanAddTenAndTwentyInDotNet()
     {
-        //GIVEN
+        // "Given"
         int a = 10, b = 20, answer;
 
-        //WEHN 
+        // When
         answer = a + b; // System Under Test (SUT)
 
-        //THEN 
-        Assert.Equal(31, answer);
+        // Then 
+        Assert.Equal(30, answer);
     }
 
     [Theory]
