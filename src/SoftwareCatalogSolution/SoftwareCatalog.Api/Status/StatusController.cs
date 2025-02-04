@@ -12,7 +12,7 @@ public class StatusController : ControllerBase
     {
         // 
         // this is fake...
-        var response = new StatusResponse(DateTimeOffset.Now, "Looks Good!");
+        var response = new StatusResponse(DateTimeOffset.Now, "Looks Good!"); //late bound method
         return Ok(response);
     }
 }
