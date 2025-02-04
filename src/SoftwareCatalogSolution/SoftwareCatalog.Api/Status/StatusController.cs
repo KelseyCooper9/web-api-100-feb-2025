@@ -12,10 +12,10 @@ public class StatusController : ControllerBase
     {
         // 
         // this is fake...
-        var response = new StatusResponse(DateTimeOffset.Now, "Looks Good!"); //late bound method
+        var response = new StatusResponse(DateTimeOffset.Now, "Looks Good!");
         return Ok(response);
     }
 }
 
 
-public record StatusResponse(DateTimeOffset LastChecked, String Message);
+public record StatusResponse(DateTimeOffset LastChecked, string Message);
