@@ -2,7 +2,7 @@
 
 namespace SoftwareCatalog.Api.Vendors;
 
-public class VendorConroller : ControllerBase
+public class VendorController : ControllerBase
 {
     [HttpGet("/vendors")]
     public ActionResult GetAllVendors()
